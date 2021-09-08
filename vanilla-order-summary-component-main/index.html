@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      background-image: url(images/pattern-background-mobile.svg);
+      background-size: cover;
+    }
+
+    .container {
+      width: 375px;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 20px;
+      background-color: white;
+      padding-bottom: 30px;
+    }
+
+    .illustration-hero {
+      width: 375px;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .main-text-content {
+      width: 70%;
+      text-align: center;
+      text-indent: 10px;
+      line-height: 1.5;
+      color: hsl(224, 23%, 55%);
+    }
+
+    .wrap-content-plan {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: hsl(225, 100%, 98%);
+      padding: 20px;
+      width: 80%;
+      border-radius: 10px;
+    }
+
+    .wrap-price-plan {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrap-price-plan>span {
+      font-weight: 700;
+    }
+
+    .wrap-price-plan>span {
+      color: hsl(224, 23%, 55%);
+    }
+
+    .wrap-buttons {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+    }
+
+    .btn-white,
+    .btn-blue {
+      border: 0;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .btn-blue {
+      background-color: #382ae1;
+      color: #fff;
+    }
+
+    .btn-white {
+      margin-top: 5px;
+      background-color: #fff;
+      color: hsl(223, 47%, 23%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img class="illustration-hero" src="images/illustration-hero.svg" />
+
+    <h1>Order Summary</h1>
+
+    <p class="main-text-content">You can now listen to millions of songs, audiobooks, and podcasts on any
+      device anywhere you like!</p>
+
+
+    <div class="wrap-content-plan">
+      <img src="images/icon-music.svg" alt="">
+      <div class="wrap-price-plan">
+        <p>Annual Plan</p>
+        <span>$59.99/year</span>
+      </div>
+      <a href="">Change</a>
+    </div>
+
+    <div class="wrap-buttons">
+      <button class="btn-blue">Proceed to Payment</button>
+      <button class="btn-white ">Cancel Order</button>
+    </div>
+
+  </div>
+</body>
+
+</html>

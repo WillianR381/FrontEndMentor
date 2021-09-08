@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    width: 350px;
+    border-radius: 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: hsl(244, 38%, 16%);
+}
+
+.wrap-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.title-content {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.title-content>span {
+    color: hsl(277, 64%, 61%);
+}
+
+.text-content {
+    font-size: 0.9rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.title-content, .text-content, .wrap-business-content {
+    text-align: center;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.wrap-business-item {
+    margin-top: 20px;
+}
+
+.wrap-business-item>h3 {
+    color: hsl(0, 0%, 100%);
+}
+
+.wrap-business-item>p {
+    margin-top: 5px;
+    font-size: .8rem;
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+}
+
+.wrap-image-side {
+    position: relative;
+    background-image: url(images/image-header-mobile.jpg);
+    /* background-image: url(images/image-header-mobile.jpg); */
+    background-size: cover;
+    width: 350px;
+    height: 220px;
+}
+
+.wrap-image-side, .wrap-image-side::after {
+    border-radius: 16px 16px 0 0;
+}
+
+.wrap-image-side::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: hsl(277, 64%, 61%);
+    content: '';
+    opacity: 0.4;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 1020px) {
+    .container {
+        width: 976px;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(244, 38%, 16%);
+    }
+    .wrap-main-content {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrap-image-side {
+        background-image: url(images/image-header-desktop.jpg);
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+    }
+    .wrap-business-content {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .wrap-image-side, .wrap-image-side::after {
+        border-radius: 0 16px 16px 0;
+    }
+}

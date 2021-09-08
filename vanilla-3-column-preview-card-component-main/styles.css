@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.wrap-card-car {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 375px;
+    height: 600px;
+    padding: 40px;
+}
+
+.wrap-card-car:nth-child(1) {
+    border-radius: 10px 0 0 10px;
+}
+
+.wrap-card-car:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+.wrap-card-car>h1 {
+    color: hsl(0, 0%, 95%);
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.wrap-card-car>p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+}
+
+.wrap-card-car>img {
+    width: 80px;
+}
+
+.wrap-card-car-sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.wrap-card-car-sedans>.btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.wrap-card-car-suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.wrap-card-car-suvs>.btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.wrap-card-car-luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.wrap-card-car-luxury>.btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn {
+    background-color: hsl(0, 0%, 95%);
+    border: 0;
+    border-radius: 20px;
+    width: 70%;
+    padding: 15px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media screen and (min-width: 820px) and (max-width: 1204px) {
+    .wrap-card-car:nth-child(1) {
+        border-radius: 10px 0 0 10px;
+    }
+    .wrap-card-car:nth-child(2) {
+        border-radius: 0 10px 10px 0;
+    }
+    .wrap-card-car:last-child {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media screen and (max-width: 828px) {
+    .wrap-card-car:nth-child(1) {
+        border-radius: 10px 10px 0 0;
+    }
+    .wrap-card-car:last-child {
+        border-radius: 0 0 10px 10px;
+    }
+}
